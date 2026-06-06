@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
@@ -20,9 +20,7 @@
   --shadow: 0 20px 45px rgba(23, 33, 43, 0.12);
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -33,17 +31,8 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-button {
-  cursor: pointer;
-  touch-action: manipulation;
-}
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
 
 .app {
   width: min(980px, calc(100% - 32px));
@@ -75,16 +64,8 @@ button {
   text-transform: uppercase;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-  line-height: 1.15;
-}
-
-h1 {
-  font-size: clamp(2rem, 4vw, 3.4rem);
-}
+h1, h2, h3 { margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 4vw, 3.4rem); }
 
 .scoreboard {
   display: grid;
@@ -108,9 +89,7 @@ h1 {
   color: var(--brand-dark);
 }
 
-.scoreboard small {
-  color: var(--muted);
-}
+.scoreboard small { color: var(--muted); }
 
 .mode-row {
   display: flex;
@@ -119,8 +98,7 @@ h1 {
   margin: 26px 0 18px;
 }
 
-.mode-button,
-.secondary {
+.mode-button, .secondary {
   min-height: 40px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -133,12 +111,9 @@ h1 {
   font-weight: 700;
 }
 
-.mode-button {
-  flex: 0 1 auto;
-}
+.mode-button { flex: 0 1 auto; }
 
-.mode-button.is-active,
-.primary {
+.mode-button.is-active, .primary {
   border: 1px solid var(--brand);
   border-radius: 8px;
   background: var(--brand);
@@ -174,9 +149,7 @@ h1 {
   gap: 14px;
 }
 
-.flashcard.is-flipped {
-  background: #2f4a68;
-}
+.flashcard.is-flipped { background: #2f4a68; }
 
 .card-label {
   color: var(--accent);
@@ -190,10 +163,7 @@ h1 {
   line-height: 1.18;
 }
 
-.hint {
-  color: #d8e5e3;
-  line-height: 1.45;
-}
+.hint { color: #d8e5e3; line-height: 1.45; }
 
 .answers {
   display: grid;
@@ -214,24 +184,10 @@ h1 {
   font-weight: 700;
 }
 
-.answer:hover,
-.answer:focus-visible {
-  border-color: var(--brand);
-}
-
-.answer.is-correct {
-  border-color: var(--good);
-  background: #eef8f2;
-}
-
-.answer.is-wrong {
-  border-color: var(--bad);
-  background: #fff1f0;
-}
-
-.answer:disabled {
-  cursor: default;
-}
+.answer:hover, .answer:focus-visible { border-color: var(--brand); }
+.answer.is-correct { border-color: var(--good); background: #eef8f2; }
+.answer.is-wrong { border-color: var(--bad); background: #fff1f0; }
+.answer:disabled { cursor: default; }
 
 .feedback {
   margin-top: 16px;
@@ -240,14 +196,8 @@ h1 {
   padding: 14px 16px;
   line-height: 1.5;
 }
-
-.feedback.good {
-  border-left-color: var(--good);
-}
-
-.feedback.bad {
-  border-left-color: var(--bad);
-}
+.feedback.good { border-left-color: var(--good); }
+.feedback.bad { border-left-color: var(--bad); }
 
 .actions {
   display: flex;
@@ -256,37 +206,18 @@ h1 {
   margin-top: 18px;
 }
 
-.primary,
-.secondary {
+.primary, .secondary {
   min-height: 44px;
   padding: 0 16px;
 }
 
-.app-footer {
-  margin-top: 14px;
-  color: var(--muted);
-  font-size: 0.85rem;
-  line-height: 1.4;
-  text-align: center;
-}
-
 @media (max-width: 900px) {
-  .topbar {
-    flex-direction: column;
-  }
-
-  .scoreboard {
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .topbar { flex-direction: column; }
+  .scoreboard { width: 100%; grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 620px) {
-  .app {
-    width: 100%;
-    padding: 0;
-  }
-
+  .app { width: 100%; padding: 0; }
   .workspace {
     min-height: 100vh;
     border: 0;
@@ -294,101 +225,39 @@ h1 {
     box-shadow: none;
     padding: 16px 14px 20px;
   }
-
-  h1 {
-    font-size: 1.85rem;
-  }
-
-  .eyebrow {
-    font-size: 0.72rem;
-  }
-
-  .scoreboard {
-    gap: 6px;
-  }
-
-  .scoreboard div {
-    min-height: 58px;
-    padding: 6px 4px;
-  }
-
-  .scoreboard span {
-    font-size: 1.2rem;
-  }
-
-  .scoreboard small {
-    font-size: 0.75rem;
-  }
-
+  h1 { font-size: 1.85rem; }
+  .eyebrow { font-size: 0.72rem; }
+  .scoreboard { gap: 6px; }
+  .scoreboard div { min-height: 58px; padding: 6px 4px; }
+  .scoreboard span { font-size: 1.2rem; }
+  .scoreboard small { font-size: 0.75rem; }
   .mode-row {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     margin: 18px 0 14px;
   }
-
   .mode-button {
     width: 100%;
     min-height: 46px;
     padding: 0 8px;
     text-align: center;
   }
-
-  .answers {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 14px;
-  }
-
-  .flashcard {
-    min-height: 190px;
-    padding: 18px;
-  }
-
-  .flashcard strong {
-    font-size: 1.35rem;
-  }
-
-  .answer {
-    min-height: 58px;
-    padding: 12px 14px;
-  }
-
-  .actions {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .primary,
-  .secondary {
-    width: 100%;
-    min-height: 48px;
-  }
-
-  .question-meta {
-    font-size: 0.9rem;
-  }
-
-  .feedback {
-    padding: 12px 14px;
-  }
+  .answers { grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
+  .flashcard { min-height: 190px; padding: 18px; }
+  .flashcard strong { font-size: 1.35rem; }
+  .answer { min-height: 58px; padding: 12px 14px; }
+  .actions { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .primary, .secondary { width: 100%; min-height: 48px; }
+  .question-meta { font-size: 0.9rem; }
+  .feedback { padding: 12px 14px; }
 }
 
 @media (max-width: 380px) {
-  .mode-row {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  .flashcard strong {
-    font-size: 1.22rem;
-  }
+  .mode-row { grid-template-columns: 1fr; }
+  h1 { font-size: 1.6rem; }
+  .flashcard strong { font-size: 1.22rem; }
 }
-
     </style>
   </head>
   <body>
@@ -400,18 +269,9 @@ h1 {
             <h1 id="app-title">Karteikarten: Kontenarten</h1>
           </div>
           <div class="scoreboard" aria-label="Lernstand">
-            <div>
-              <span id="score-correct">0</span>
-              <small>richtig</small>
-            </div>
-            <div>
-              <span id="score-total">0</span>
-              <small>bearbeitet</small>
-            </div>
-            <div>
-              <span id="score-streak">0</span>
-              <small>Serie</small>
-            </div>
+            <div><span id="score-correct">0</span><small>richtig</small></div>
+            <div><span id="score-total">0</span><small>bearbeitet</small></div>
+            <div><span id="score-streak">0</span><small>Serie</small></div>
           </div>
         </div>
 
@@ -424,21 +284,14 @@ h1 {
         </div>
 
         <section class="quiz-panel" aria-live="polite">
-          <div class="question-meta">
-            <span id="question-tag">Kontenart</span>
-            <span id="question-count">Frage 1</span>
-          </div>
-
+          <div class="question-meta"><span id="question-tag">Kontenart</span><span id="question-count">Frage 1</span></div>
           <button id="card" class="flashcard" type="button" aria-label="Karte umdrehen">
             <span class="card-label">Frage</span>
             <strong id="question-text"></strong>
             <span id="question-hint" class="hint"></span>
           </button>
-
           <div id="answers" class="answers" aria-label="Antwortmoeglichkeiten"></div>
-
           <div id="feedback" class="feedback" hidden></div>
-
           <div class="actions">
             <button id="next-button" class="primary" type="button">Naechste Frage</button>
             <button id="shuffle-button" class="secondary" type="button">Mischen</button>
@@ -450,389 +303,81 @@ h1 {
 
     <script>
 const defaultQuestions = [
-  {
-    id: "ab-aktive-bestandskonten",
-    category: "bestand",
-    tag: "Aktive Bestandskonten",
-    question: "Wo steht der Anfangsbestand bei aktiven Bestandskonten?",
-    answers: ["Im Soll", "Im Haben", "Im Schlussbilanzkonto", "Im GuV-Konto"],
-    correct: 0,
-    explanation: "Aktive Bestandskonten beginnen im Soll. Mehrungen stehen ebenfalls im Soll, Minderungen im Haben."
-  },
-  {
-    id: "mehrung-aktive-bestandskonten",
-    category: "bestand",
-    tag: "Aktive Bestandskonten",
-    question: "Auf welcher Seite werden Mehrungen bei aktiven Bestandskonten gebucht?",
-    answers: ["Soll", "Haben", "GuV", "Eigenkapital"],
-    correct: 0,
-    explanation: "Bei aktiven Bestandskonten stehen Anfangsbestand und Mehrungen im Soll."
-  },
-  {
-    id: "minderung-aktive-bestandskonten",
-    category: "bestand",
-    tag: "Aktive Bestandskonten",
-    question: "Auf welcher Seite werden Minderungen bei aktiven Bestandskonten gebucht?",
-    answers: ["Soll", "Haben", "Ertragskonto", "Privatkonto"],
-    correct: 1,
-    explanation: "Minderungen stehen bei aktiven Bestandskonten im Haben."
-  },
-  {
-    id: "abschluss-aktive-bestandskonten",
-    category: "bestand",
-    tag: "Aktive Bestandskonten",
-    question: "Ueber welches Konto werden aktive Bestandskonten abgeschlossen?",
-    answers: ["Schlussbilanzkonto", "GuV-Konto", "Eroeffnungsbilanzkonto", "Aufwandskonto"],
-    correct: 0,
-    explanation: "Bestandskonten werden am Ende ueber das Schlussbilanzkonto abgeschlossen."
-  },
-  {
-    id: "ab-passive-bestandskonten",
-    category: "bestand",
-    tag: "Passive Bestandskonten",
-    question: "Wo steht der Anfangsbestand bei passiven Bestandskonten?",
-    answers: ["Im Soll", "Im Haben", "Im GuV-Konto", "In der Kasse"],
-    correct: 1,
-    explanation: "Passive Bestandskonten beginnen im Haben. Mehrungen stehen im Haben, Minderungen im Soll."
-  },
-  {
-    id: "mehrung-passive-bestandskonten",
-    category: "bestand",
-    tag: "Passive Bestandskonten",
-    question: "Auf welcher Seite werden Mehrungen bei passiven Bestandskonten gebucht?",
-    answers: ["Soll", "Haben", "Nur im Schlussbilanzkonto", "Nur im Eroeffnungsbilanzkonto"],
-    correct: 1,
-    explanation: "Bei passiven Bestandskonten stehen Anfangsbestand und Mehrungen im Haben."
-  },
-  {
-    id: "minderung-passive-bestandskonten",
-    category: "bestand",
-    tag: "Passive Bestandskonten",
-    question: "Auf welcher Seite werden Minderungen bei passiven Bestandskonten gebucht?",
-    answers: ["Soll", "Haben", "Ertragsseite", "Aktivseite der Bilanz"],
-    correct: 0,
-    explanation: "Minderungen stehen bei passiven Bestandskonten im Soll."
-  },
-  {
-    id: "abschluss-passive-bestandskonten",
-    category: "bestand",
-    tag: "Passive Bestandskonten",
-    question: "Ueber welches Konto werden passive Bestandskonten abgeschlossen?",
-    answers: ["Schlussbilanzkonto", "GuV-Konto", "Privatkonto", "Aufwandskonto"],
-    correct: 0,
-    explanation: "Auch passive Bestandskonten werden ueber das Schlussbilanzkonto abgeschlossen."
-  },
-  {
-    id: "aufwandskonten-seite",
-    category: "erfolg",
-    tag: "Aufwandskonten",
-    question: "Auf welcher Seite werden Aufwendungen gebucht?",
-    answers: ["Soll", "Haben", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto"],
-    correct: 0,
-    explanation: "Aufwendungen mindern das Eigenkapital und werden auf Aufwandskonten im Soll gebucht."
-  },
-  {
-    id: "abschluss-aufwandskonten",
-    category: "erfolg",
-    tag: "Aufwandskonten",
-    question: "Ueber welches Konto werden Aufwandskonten abgeschlossen?",
-    answers: ["GuV-Konto", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto", "Bank"],
-    correct: 0,
-    explanation: "Aufwands- und Ertragskonten sind Erfolgskonten und werden ueber das GuV-Konto abgeschlossen."
-  },
-  {
-    id: "ertragskonten-seite",
-    category: "erfolg",
-    tag: "Ertragskonten",
-    question: "Auf welcher Seite werden Ertraege gebucht?",
-    answers: ["Soll", "Haben", "Schlussbilanzkonto", "Kasse"],
-    correct: 1,
-    explanation: "Ertraege erhoehen das Eigenkapital und werden auf Ertragskonten im Haben gebucht."
-  },
-  {
-    id: "abschluss-ertragskonten",
-    category: "erfolg",
-    tag: "Ertragskonten",
-    question: "Ueber welches Konto werden Ertragskonten abgeschlossen?",
-    answers: ["GuV-Konto", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto", "Forderungen"],
-    correct: 0,
-    explanation: "Ertragskonten werden wie Aufwandskonten ueber das GuV-Konto abgeschlossen."
-  },
-  {
-    id: "abschluss-guv",
-    category: "erfolg",
-    tag: "GuV-Konto",
-    question: "Worueber wird das GuV-Konto abgeschlossen?",
-    answers: ["Eigenkapitalkonto", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto", "Umsatzsteuerkonto"],
-    correct: 0,
-    explanation: "Das GuV-Konto zeigt Gewinn oder Verlust. Der Saldo wird ueber das Eigenkapitalkonto abgeschlossen."
-  },
-  {
-    id: "vorsteuer-kontoart",
-    category: "bestand",
-    tag: "Steuerkonten",
-    question: "Was ist Vorsteuer fuer ein Konto?",
-    answers: ["Aktives Bestandskonto", "Passives Bestandskonto", "Aufwandskonto", "Ertragskonto"],
-    correct: 0,
-    explanation: "Vorsteuer ist eine Forderung gegenueber dem Finanzamt und damit ein aktives Bestandskonto."
-  },
-  {
-    id: "umsatzsteuer-kontoart",
-    category: "bestand",
-    tag: "Steuerkonten",
-    question: "Was ist Umsatzsteuer fuer ein Konto?",
-    answers: ["Aktives Bestandskonto", "Passives Bestandskonto", "Aufwandskonto", "Ertragskonto"],
-    correct: 1,
-    explanation: "Umsatzsteuer ist eine Verbindlichkeit gegenueber dem Finanzamt und damit ein passives Bestandskonto."
-  },
-  {
-    id: "maschinen-kontoart",
-    category: "zuordnung",
-    tag: "Anlagevermoegen",
-    question: "Was ist das Konto Maschinen?",
-    answers: ["Anlagevermoegen", "Umlaufvermoegen", "Fremdkapital", "Aufwand"],
-    correct: 0,
-    explanation: "Maschinen bleiben laenger im Unternehmen. Sie gehoeren zum Anlagevermoegen."
-  },
-  {
-    id: "technische-anlagen-kontoart",
-    category: "zuordnung",
-    tag: "Anlagevermoegen",
-    question: "Was sind technische Anlagen fuer ein Konto?",
-    answers: ["Anlagevermoegen", "Umlaufvermoegen", "Eigenkapital", "Ertrag"],
-    correct: 0,
-    explanation: "Technische Anlagen werden dauerhaft genutzt und gehoeren deshalb zum Anlagevermoegen."
-  },
-  {
-    id: "bga-kontoart",
-    category: "zuordnung",
-    tag: "BGA",
-    question: "Was ist BGA fuer ein Konto?",
-    answers: ["Anlagevermoegen", "Umlaufvermoegen", "Fremdkapital", "Aufwandskonto"],
-    correct: 0,
-    explanation: "BGA bedeutet Betriebs- und Geschaeftsausstattung. Das sind langfristig genutzte Gegenstaende und damit Anlagevermoegen."
-  },
-  {
-    id: "bga-gebrauchsgueter",
-    category: "zuordnung",
-    tag: "Gebrauchsgueter",
-    question: "BGA wie Schreibtische, Regale oder Computer sind ...",
-    answers: ["Gebrauchsgueter", "Verbrauchsgueter", "Ertraege", "Verbindlichkeiten"],
-    correct: 0,
-    explanation: "BGA wird laenger genutzt. Deshalb sind diese Gegenstaende Gebrauchsgueter."
-  },
-  {
-    id: "bueromaterial-verbrauchsgueter",
-    category: "zuordnung",
-    tag: "Verbrauchsgueter",
-    question: "Bueromaterial wie Papier, Stifte oder Toner sind ...",
-    answers: ["Verbrauchsgueter", "Gebrauchsgueter", "Anlagevermoegen", "Eigenkapital"],
-    correct: 0,
-    explanation: "Bueromaterial wird verbraucht. Deshalb sind es Verbrauchsgueter und typischerweise Aufwand."
-  },
-  {
-    id: "bueromaterial-kontoart",
-    category: "erfolg",
-    tag: "Aufwand",
-    question: "Was ist Bueromaterial fuer ein Konto?",
-    answers: ["Aufwandskonto", "Ertragskonto", "Passives Bestandskonto", "Eigenkapitalkonto"],
-    correct: 0,
-    explanation: "Bueromaterial wird verbraucht. Der Verbrauch wird als Aufwand gebucht."
-  },
-  {
-    id: "waren-kontoart",
-    category: "zuordnung",
-    tag: "Umlaufvermoegen",
-    question: "Waren, die zum Weiterverkauf eingekauft werden, gehoeren zu ...",
-    answers: ["Umlaufvermoegen", "Anlagevermoegen", "Eigenkapital", "Ertrag"],
-    correct: 0,
-    explanation: "Waren sollen verkauft werden und bleiben nicht dauerhaft im Betrieb. Sie gehoeren zum Umlaufvermoegen."
-  },
-  {
-    id: "kasse-kontoart",
-    category: "zuordnung",
-    tag: "Umlaufvermoegen",
-    question: "Was ist Kasse fuer ein Konto?",
-    answers: ["Umlaufvermoegen", "Anlagevermoegen", "Fremdkapital", "Aufwand"],
-    correct: 0,
-    explanation: "Kasse ist ein aktives Bestandskonto und gehoert zum Umlaufvermoegen."
-  },
-  {
-    id: "bank-aktiv-kontoart",
-    category: "zuordnung",
-    tag: "Umlaufvermoegen",
-    question: "Was ist Bank bei einem positiven Bankguthaben?",
-    answers: ["Aktives Bestandskonto im Umlaufvermoegen", "Passives Bestandskonto im Fremdkapital", "Aufwandskonto", "Ertragskonto"],
-    correct: 0,
-    explanation: "Ein Bankguthaben ist Vermoegen. Es gehoert zu den aktiven Bestandskonten und zum Umlaufvermoegen."
-  },
-  {
-    id: "forderungen-kontoart",
-    category: "zuordnung",
-    tag: "Umlaufvermoegen",
-    question: "Was sind Forderungen aus Lieferungen und Leistungen?",
-    answers: ["Aktives Bestandskonto", "Passives Bestandskonto", "Aufwandskonto", "Ertragskonto"],
-    correct: 0,
-    explanation: "Forderungen bedeuten: Kunden schulden dem Unternehmen Geld. Das ist Vermoegen."
-  },
-  {
-    id: "verbindlichkeiten-kontoart",
-    category: "zuordnung",
-    tag: "Fremdkapital",
-    question: "Was sind Verbindlichkeiten aus Lieferungen und Leistungen?",
-    answers: ["Fremdkapital", "Anlagevermoegen", "Umlaufvermoegen", "Ertrag"],
-    correct: 0,
-    explanation: "Verbindlichkeiten sind Schulden des Unternehmens. Sie gehoeren zum Fremdkapital."
-  },
-  {
-    id: "darlehen-kontoart",
-    category: "zuordnung",
-    tag: "Fremdkapital",
-    question: "Ein Bankdarlehen ist ...",
-    answers: ["Fremdkapital", "Eigenkapital", "Umlaufvermoegen", "Aufwand"],
-    correct: 0,
-    explanation: "Ein Darlehen muss zurueckgezahlt werden. Es ist deshalb Fremdkapital."
-  },
-  {
-    id: "eigenkapital-kontoart",
-    category: "zuordnung",
-    tag: "Eigenkapital",
-    question: "Was ist Eigenkapital?",
-    answers: ["Passives Bestandskonto", "Aktives Bestandskonto", "Aufwandskonto", "Ertragskonto"],
-    correct: 0,
-    explanation: "Eigenkapital steht auf der Passivseite der Bilanz und ist ein passives Bestandskonto."
-  },
-  {
-    id: "fuhrpark-kontoart",
-    category: "zuordnung",
-    tag: "Anlagevermoegen",
-    question: "Was ist Fuhrpark fuer ein Konto?",
-    answers: ["Anlagevermoegen", "Umlaufvermoegen", "Fremdkapital", "Aufwand"],
-    correct: 0,
-    explanation: "Fahrzeuge werden laenger genutzt. Der Fuhrpark gehoert deshalb zum Anlagevermoegen."
-  },
-  {
-    id: "miete-kontoart",
-    category: "erfolg",
-    tag: "Aufwand",
-    question: "Gezahlte Miete fuer Geschaeftsraeume ist ...",
-    answers: ["Aufwand", "Ertrag", "Anlagevermoegen", "Fremdkapital"],
-    correct: 0,
-    explanation: "Gezahlte Miete verbraucht wirtschaftlichen Nutzen und ist ein Aufwand."
-  },
-  {
-    id: "zinsertraege-kontoart",
-    category: "erfolg",
-    tag: "Ertrag",
-    question: "Erhaltene Zinsen sind ...",
-    answers: ["Ertrag", "Aufwand", "Fremdkapital", "Umlaufvermoegen"],
-    correct: 0,
-    explanation: "Erhaltene Zinsen erhoehen den Erfolg des Unternehmens. Sie sind Ertrag."
-  },
-  {
-    id: "zinsaufwand-kontoart",
-    category: "erfolg",
-    tag: "Aufwand",
-    question: "Gezahlte Darlehenszinsen sind ...",
-    answers: ["Aufwand", "Ertrag", "Eigenkapital", "Anlagevermoegen"],
-    correct: 0,
-    explanation: "Zinsen, die das Unternehmen zahlt, sind Aufwand."
-  },
-  {
-    id: "umsatzerloese-kontoart",
-    category: "erfolg",
-    tag: "Ertrag",
-    question: "Was sind Umsatzerloese fuer ein Konto?",
-    answers: ["Ertragskonto", "Aufwandskonto", "Aktives Bestandskonto", "Passives Bestandskonto"],
-    correct: 0,
-    explanation: "Umsatzerloese entstehen durch Verkauf und sind Ertraege."
-  }
+  { id: "ab-aktive-bestandskonten", category: "bestand", tag: "Aktive Bestandskonten", question: "Wo steht der Anfangsbestand bei aktiven Bestandskonten?", answers: ["Im Soll", "Im Haben", "Im Schlussbilanzkonto", "Im GuV-Konto"], correct: 0, explanation: "Aktive Bestandskonten beginnen im Soll. Mehrungen stehen ebenfalls im Soll, Minderungen im Haben." },
+  { id: "mehrung-aktive-bestandskonten", category: "bestand", tag: "Aktive Bestandskonten", question: "Auf welcher Seite werden Mehrungen bei aktiven Bestandskonten gebucht?", answers: ["Soll", "Haben", "GuV", "Eigenkapital"], correct: 0, explanation: "Bei aktiven Bestandskonten stehen Anfangsbestand und Mehrungen im Soll." },
+  { id: "minderung-aktive-bestandskonten", category: "bestand", tag: "Aktive Bestandskonten", question: "Auf welcher Seite werden Minderungen bei aktiven Bestandskonten gebucht?", answers: ["Soll", "Haben", "Ertragskonto", "Privatkonto"], correct: 1, explanation: "Minderungen stehen bei aktiven Bestandskonten im Haben." },
+  { id: "abschluss-aktive-bestandskonten", category: "bestand", tag: "Aktive Bestandskonten", question: "Ueber welches Konto werden aktive Bestandskonten abgeschlossen?", answers: ["Schlussbilanzkonto", "GuV-Konto", "Eroeffnungsbilanzkonto", "Aufwandskonto"], correct: 0, explanation: "Bestandskonten werden am Ende ueber das Schlussbilanzkonto abgeschlossen." },
+  { id: "ab-passive-bestandskonten", category: "bestand", tag: "Passive Bestandskonten", question: "Wo steht der Anfangsbestand bei passiven Bestandskonten?", answers: ["Im Soll", "Im Haben", "Im GuV-Konto", "In der Kasse"], correct: 1, explanation: "Passive Bestandskonten beginnen im Haben. Mehrungen stehen im Haben, Minderungen im Soll." },
+  { id: "mehrung-passive-bestandskonten", category: "bestand", tag: "Passive Bestandskonten", question: "Auf welcher Seite werden Mehrungen bei passiven Bestandskonten gebucht?", answers: ["Soll", "Haben", "Nur im Schlussbilanzkonto", "Nur im Eroeffnungsbilanzkonto"], correct: 1, explanation: "Bei passiven Bestandskonten stehen Anfangsbestand und Mehrungen im Haben." },
+  { id: "minderung-passive-bestandskonten", category: "bestand", tag: "Passive Bestandskonten", question: "Auf welcher Seite werden Minderungen bei passiven Bestandskonten gebucht?", answers: ["Soll", "Haben", "Ertragsseite", "Aktivseite der Bilanz"], correct: 0, explanation: "Minderungen stehen bei passiven Bestandskonten im Soll." },
+  { id: "abschluss-passive-bestandskonten", category: "bestand", tag: "Passive Bestandskonten", question: "Ueber welches Konto werden passive Bestandskonten abgeschlossen?", answers: ["Schlussbilanzkonto", "GuV-Konto", "Privatkonto", "Aufwandskonto"], correct: 0, explanation: "Auch passive Bestandskonten werden ueber das Schlussbilanzkonto abgeschlossen." },
+  { id: "aufwandskonten-seite", category: "erfolg", tag: "Aufwandskonten", question: "Auf welcher Seite werden Aufwendungen gebucht?", answers: ["Soll", "Haben", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto"], correct: 0, explanation: "Aufwendungen mindern das Eigenkapital und werden auf Aufwandskonten im Soll gebucht." },
+  { id: "abschluss-aufwandskonten", category: "erfolg", tag: "Aufwandskonten", question: "Ueber welches Konto werden Aufwandskonten abgeschlossen?", answers: ["GuV-Konto", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto", "Bank"], correct: 0, explanation: "Aufwands- und Ertragskonten sind Erfolgskonten und werden ueber das GuV-Konto abgeschlossen." },
+  { id: "ertragskonten-seite", category: "erfolg", tag: "Ertragskonten", question: "Auf welcher Seite werden Ertraege gebucht?", answers: ["Soll", "Haben", "Schlussbilanzkonto", "Kasse"], correct: 1, explanation: "Ertraege erhoehen das Eigenkapital und werden auf Ertragskonten im Haben gebucht." },
+  { id: "abschluss-ertragskonten", category: "erfolg", tag: "Ertragskonten", question: "Ueber welches Konto werden Ertragskonten abgeschlossen?", answers: ["GuV-Konto", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto", "Forderungen"], correct: 0, explanation: "Ertragskonten werden wie Aufwandskonten ueber das GuV-Konto abgeschlossen." },
+  { id: "abschluss-guv", category: "erfolg", tag: "GuV-Konto", question: "Worueber wird das GuV-Konto abgeschlossen?", answers: ["Eigenkapitalkonto", "Schlussbilanzkonto", "Eroeffnungsbilanzkonto", "Umsatzsteuerkonto"], correct: 0, explanation: "Das GuV-Konto zeigt Gewinn oder Verlust. Der Saldo wird ueber das Eigenkapitalkonto abgeschlossen." },
+  { id: "vorsteuer-kontoart", category: "bestand", tag: "Steuerkonten", question: "Was ist Vorsteuer fuer ein Konto?", answers: ["Aktives Bestandskonto", "Passives Bestandskonto", "Aufwandskonto", "Ertragskonto"], correct: 0, explanation: "Vorsteuer ist eine Forderung gegenueber dem Finanzamt und damit ein aktives Bestandskonto." },
+  { id: "umsatzsteuer-kontoart", category: "bestand", tag: "Steuerkonten", question: "Was ist Umsatzsteuer fuer ein Konto?", answers: ["Aktives Bestandskonto", "Passives Bestandskonto", "Aufwandskonto", "Ertragskonto"], correct: 1, explanation: "Umsatzsteuer ist eine Verbindlichkeit gegenueber dem Finanzamt und damit ein passives Bestandskonto." },
+  { id: "vorsteuer-entsteht", category: "bestand", tag: "Vorsteuer", question: "Wann entsteht Vorsteuer?", answers: ["Beim Einkauf von Waren oder Leistungen mit Umsatzsteuer", "Beim Verkauf an Kunden", "Beim Abschluss des GuV-Kontos", "Beim Bilden von Eigenkapital"], correct: 0, explanation: "Vorsteuer entsteht, wenn das Unternehmen selbst einkauft und auf der Eingangsrechnung Umsatzsteuer enthalten ist." },
+  { id: "umsatzsteuer-entsteht", category: "bestand", tag: "Umsatzsteuer", question: "Wann entsteht Umsatzsteuer?", answers: ["Beim Verkauf von Waren oder Leistungen an Kunden", "Beim Einkauf von Waren", "Beim Abschluss des Vorsteuerkontos", "Beim Kauf von Briefmarken ohne Steuer"], correct: 0, explanation: "Umsatzsteuer entsteht, wenn das Unternehmen etwas verkauft und dem Kunden Umsatzsteuer berechnet." },
+  { id: "vorsteuer-buchungsseite", category: "bestand", tag: "Vorsteuer", question: "Auf welcher Seite wird Vorsteuer normalerweise gebucht?", answers: ["Im Soll", "Im Haben", "Nur im GuV-Konto", "Nur im Eigenkapital"], correct: 0, explanation: "Vorsteuer wird im Soll gebucht, weil sie eine Forderung gegenueber dem Finanzamt darstellt." },
+  { id: "umsatzsteuer-buchungsseite", category: "bestand", tag: "Umsatzsteuer", question: "Auf welcher Seite wird Umsatzsteuer normalerweise gebucht?", answers: ["Im Haben", "Im Soll", "Nur im Schlussbilanzkonto", "Nur im Aufwandskonto"], correct: 0, explanation: "Umsatzsteuer wird im Haben gebucht, weil sie eine Verbindlichkeit gegenueber dem Finanzamt darstellt." },
+  { id: "vorsteuer-abschluss", category: "bestand", tag: "Vorsteuer", question: "Wie wird das Vorsteuerkonto am Ende verrechnet?", answers: ["Mit dem Umsatzsteuerkonto", "Mit dem GuV-Konto", "Mit dem Konto BGA", "Mit dem Konto Umsatzerloese"], correct: 0, explanation: "Vorsteuer wird mit der Umsatzsteuer verrechnet. Dadurch ergibt sich die Zahllast oder eine Erstattung." },
+  { id: "umsatzsteuer-zahllast", category: "bestand", tag: "Umsatzsteuer", question: "Was bedeutet Zahllast bei der Umsatzsteuer?", answers: ["Umsatzsteuer ist hoeher als Vorsteuer", "Vorsteuer ist hoeher als Umsatzsteuer", "Aufwand ist hoeher als Ertrag", "Anlagevermoegen ist hoeher als Umlaufvermoegen"], correct: 0, explanation: "Eine Zahllast entsteht, wenn die vereinnahmte Umsatzsteuer groesser ist als die abziehbare Vorsteuer." },
+  { id: "umsatzsteuer-erstattung", category: "bestand", tag: "Vorsteuer", question: "Wann kann eine Erstattung vom Finanzamt entstehen?", answers: ["Wenn die Vorsteuer hoeher ist als die Umsatzsteuer", "Wenn die Umsatzsteuer hoeher ist als die Vorsteuer", "Wenn kein Einkauf gebucht wurde", "Wenn das GuV-Konto einen Gewinn zeigt"], correct: 0, explanation: "Ist die Vorsteuer groesser als die Umsatzsteuer, kann sich ein Erstattungsanspruch gegenueber dem Finanzamt ergeben." },
+  { id: "vorsteuer-kein-aufwand", category: "bestand", tag: "Vorsteuer", question: "Warum ist Vorsteuer kein Aufwand?", answers: ["Weil sie vom Finanzamt zurueckgefordert bzw. verrechnet werden kann", "Weil sie immer Gewinn ist", "Weil sie zum Eigenkapital gehoert", "Weil sie nie gebucht wird"], correct: 0, explanation: "Vorsteuer ist fuer vorsteuerabzugsberechtigte Unternehmen kein endgueltiger Verbrauch, sondern eine Forderung bzw. Verrechnung mit dem Finanzamt." },
+  { id: "umsatzsteuer-kein-ertrag", category: "bestand", tag: "Umsatzsteuer", question: "Warum ist Umsatzsteuer kein Ertrag?", answers: ["Weil sie an das Finanzamt weitergegeben wird", "Weil sie immer Aufwand ist", "Weil sie zum Anlagevermoegen gehoert", "Weil sie das Warenkonto erhoeht"], correct: 0, explanation: "Umsatzsteuer wird vom Kunden eingenommen, gehoert aber wirtschaftlich dem Finanzamt und ist deshalb kein Ertrag." },
+  { id: "einkauf-mit-vorsteuer", category: "bestand", tag: "Vorsteuer", question: "Ein Unternehmen kauft Bueromaterial netto 100 Euro plus 19 Euro Umsatzsteuer. Was wird mit den 19 Euro gebucht?", answers: ["Vorsteuer im Soll", "Umsatzsteuer im Haben", "Umsatzerloese im Haben", "Eigenkapital im Soll"], correct: 0, explanation: "Beim Einkauf wird die enthaltene Steuer als Vorsteuer im Soll gebucht." },
+  { id: "verkauf-mit-umsatzsteuer", category: "bestand", tag: "Umsatzsteuer", question: "Ein Unternehmen verkauft Waren netto 100 Euro plus 19 Euro Umsatzsteuer. Was wird mit den 19 Euro gebucht?", answers: ["Umsatzsteuer im Haben", "Vorsteuer im Soll", "Aufwand im Soll", "BGA im Haben"], correct: 0, explanation: "Beim Verkauf wird die dem Kunden berechnete Steuer als Umsatzsteuer im Haben gebucht." },
+  { id: "maschinen-kontoart", category: "zuordnung", tag: "Anlagevermoegen", question: "Was ist das Konto Maschinen?", answers: ["Anlagevermoegen", "Umlaufvermoegen", "Fremdkapital", "Aufwand"], correct: 0, explanation: "Maschinen bleiben laenger im Unternehmen. Sie gehoeren zum Anlagevermoegen." },
+  { id: "technische-anlagen-kontoart", category: "zuordnung", tag: "Anlagevermoegen", question: "Was sind technische Anlagen fuer ein Konto?", answers: ["Anlagevermoegen", "Umlaufvermoegen", "Eigenkapital", "Ertrag"], correct: 0, explanation: "Technische Anlagen werden dauerhaft genutzt und gehoeren deshalb zum Anlagevermoegen." },
+  { id: "bga-kontoart", category: "zuordnung", tag: "BGA", question: "Was ist BGA fuer ein Konto?", answers: ["Anlagevermoegen", "Umlaufvermoegen", "Fremdkapital", "Aufwandskonto"], correct: 0, explanation: "BGA bedeutet Betriebs- und Geschaeftsausstattung. Das sind langfristig genutzte Gegenstaende und damit Anlagevermoegen." },
+  { id: "bga-gebrauchsgueter", category: "zuordnung", tag: "Gebrauchsgueter", question: "BGA wie Schreibtische, Regale oder Computer sind ...", answers: ["Gebrauchsgueter", "Verbrauchsgueter", "Ertraege", "Verbindlichkeiten"], correct: 0, explanation: "BGA wird laenger genutzt. Deshalb sind diese Gegenstaende Gebrauchsgueter." },
+  { id: "bueromaterial-verbrauchsgueter", category: "zuordnung", tag: "Verbrauchsgueter", question: "Bueromaterial wie Papier, Stifte oder Toner sind ...", answers: ["Verbrauchsgueter", "Gebrauchsgueter", "Anlagevermoegen", "Eigenkapital"], correct: 0, explanation: "Bueromaterial wird verbraucht. Deshalb sind es Verbrauchsgueter und typischerweise Aufwand." },
+  { id: "bueromaterial-kontoart", category: "erfolg", tag: "Aufwand", question: "Was ist Bueromaterial fuer ein Konto?", answers: ["Aufwandskonto", "Ertragskonto", "Passives Bestandskonto", "Eigenkapitalkonto"], correct: 0, explanation: "Bueromaterial wird verbraucht. Der Verbrauch wird als Aufwand gebucht." },
+  { id: "waren-kontoart", category: "zuordnung", tag: "Umlaufvermoegen", question: "Waren, die zum Weiterverkauf eingekauft werden, gehoeren zu ...", answers: ["Umlaufvermoegen", "Anlagevermoegen", "Eigenkapital", "Ertrag"], correct: 0, explanation: "Waren sollen verkauft werden und bleiben nicht dauerhaft im Betrieb. Sie gehoeren zum Umlaufvermoegen." },
+  { id: "kasse-kontoart", category: "zuordnung", tag: "Umlaufvermoegen", question: "Was ist Kasse fuer ein Konto?", answers: ["Umlaufvermoegen", "Anlagevermoegen", "Fremdkapital", "Aufwand"], correct: 0, explanation: "Kasse ist ein aktives Bestandskonto und gehoert zum Umlaufvermoegen." },
+  { id: "bank-aktiv-kontoart", category: "zuordnung", tag: "Umlaufvermoegen", question: "Was ist Bank bei einem positiven Bankguthaben?", answers: ["Aktives Bestandskonto im Umlaufvermoegen", "Passives Bestandskonto im Fremdkapital", "Aufwandskonto", "Ertragskonto"], correct: 0, explanation: "Ein Bankguthaben ist Vermoegen. Es gehoert zu den aktiven Bestandskonten und zum Umlaufvermoegen." },
+  { id: "forderungen-kontoart", category: "zuordnung", tag: "Umlaufvermoegen", question: "Was sind Forderungen aus Lieferungen und Leistungen?", answers: ["Aktives Bestandskonto", "Passives Bestandskonto", "Aufwandskonto", "Ertragskonto"], correct: 0, explanation: "Forderungen bedeuten: Kunden schulden dem Unternehmen Geld. Das ist Vermoegen." },
+  { id: "verbindlichkeiten-kontoart", category: "zuordnung", tag: "Fremdkapital", question: "Was sind Verbindlichkeiten aus Lieferungen und Leistungen?", answers: ["Fremdkapital", "Anlagevermoegen", "Umlaufvermoegen", "Ertrag"], correct: 0, explanation: "Verbindlichkeiten sind Schulden des Unternehmens. Sie gehoeren zum Fremdkapital." },
+  { id: "darlehen-kontoart", category: "zuordnung", tag: "Fremdkapital", question: "Ein Bankdarlehen ist ...", answers: ["Fremdkapital", "Eigenkapital", "Umlaufvermoegen", "Aufwand"], correct: 0, explanation: "Ein Darlehen muss zurueckgezahlt werden. Es ist deshalb Fremdkapital." },
+  { id: "eigenkapital-kontoart", category: "zuordnung", tag: "Eigenkapital", question: "Was ist Eigenkapital?", answers: ["Passives Bestandskonto", "Aktives Bestandskonto", "Aufwandskonto", "Ertragskonto"], correct: 0, explanation: "Eigenkapital steht auf der Passivseite der Bilanz und ist ein passives Bestandskonto." },
+  { id: "fuhrpark-kontoart", category: "zuordnung", tag: "Anlagevermoegen", question: "Was ist Fuhrpark fuer ein Konto?", answers: ["Anlagevermoegen", "Umlaufvermoegen", "Fremdkapital", "Aufwand"], correct: 0, explanation: "Fahrzeuge werden laenger genutzt. Der Fuhrpark gehoert deshalb zum Anlagevermoegen." },
+  { id: "miete-kontoart", category: "erfolg", tag: "Aufwand", question: "Gezahlte Miete fuer Geschaeftsraeume ist ...", answers: ["Aufwand", "Ertrag", "Anlagevermoegen", "Fremdkapital"], correct: 0, explanation: "Gezahlte Miete verbraucht wirtschaftlichen Nutzen und ist ein Aufwand." },
+  { id: "zinsertraege-kontoart", category: "erfolg", tag: "Ertrag", question: "Erhaltene Zinsen sind ...", answers: ["Ertrag", "Aufwand", "Fremdkapital", "Umlaufvermoegen"], correct: 0, explanation: "Erhaltene Zinsen erhoehen den Erfolg des Unternehmens. Sie sind Ertrag." },
+  { id: "zinsaufwand-kontoart", category: "erfolg", tag: "Aufwand", question: "Gezahlte Darlehenszinsen sind ...", answers: ["Aufwand", "Ertrag", "Eigenkapital", "Anlagevermoegen"], correct: 0, explanation: "Zinsen, die das Unternehmen zahlt, sind Aufwand." },
+  { id: "umsatzerloese-kontoart", category: "erfolg", tag: "Ertrag", question: "Was sind Umsatzerloese fuer ein Konto?", answers: ["Ertragskonto", "Aufwandskonto", "Aktives Bestandskonto", "Passives Bestandskonto"], correct: 0, explanation: "Umsatzerloese entstehen durch Verkauf und sind Ertraege." }
 ];
 
 const wrongKey = "konten-karteikarten-fehler-v1";
-
-const state = {
-  questions: [...defaultQuestions],
-  currentMode: "all",
-  currentIndex: 0,
-  score: { correct: 0, total: 0, streak: 0 },
-  answered: false,
-  currentAnswers: [],
-  wrongIds: loadWrongIds()
-};
-
+const state = { questions: [...defaultQuestions], currentMode: "all", currentIndex: 0, score: { correct: 0, total: 0, streak: 0 }, answered: false, currentAnswers: [], wrongIds: loadWrongIds() };
 const elements = {
-  card: document.querySelector("#card"),
-  questionText: document.querySelector("#question-text"),
-  questionHint: document.querySelector("#question-hint"),
-  questionTag: document.querySelector("#question-tag"),
-  questionCount: document.querySelector("#question-count"),
-  answers: document.querySelector("#answers"),
-  feedback: document.querySelector("#feedback"),
-  nextButton: document.querySelector("#next-button"),
-  shuffleButton: document.querySelector("#shuffle-button"),
-  resetButton: document.querySelector("#reset-button"),
-  scoreCorrect: document.querySelector("#score-correct"),
-  scoreTotal: document.querySelector("#score-total"),
-  scoreStreak: document.querySelector("#score-streak"),
-  modeButtons: document.querySelectorAll(".mode-button")
+  card: document.querySelector("#card"), questionText: document.querySelector("#question-text"), questionHint: document.querySelector("#question-hint"), questionTag: document.querySelector("#question-tag"), questionCount: document.querySelector("#question-count"), answers: document.querySelector("#answers"), feedback: document.querySelector("#feedback"), nextButton: document.querySelector("#next-button"), shuffleButton: document.querySelector("#shuffle-button"), resetButton: document.querySelector("#reset-button"), scoreCorrect: document.querySelector("#score-correct"), scoreTotal: document.querySelector("#score-total"), scoreStreak: document.querySelector("#score-streak"), modeButtons: document.querySelectorAll(".mode-button")
 };
-
-function loadWrongIds() {
-  try {
-    return new Set(JSON.parse(localStorage.getItem(wrongKey)) || []);
-  } catch {
-    return new Set();
-  }
-}
-
-function saveWrongIds() {
-  localStorage.setItem(wrongKey, JSON.stringify([...state.wrongIds]));
-}
-
-function getActiveQuestions() {
-  if (state.currentMode === "wrong") {
-    return state.questions.filter((question) => state.wrongIds.has(question.id));
-  }
-
-  if (state.currentMode === "all") return state.questions;
-
-  return state.questions.filter((question) => question.category === state.currentMode);
-}
-
-function getCurrentQuestion() {
-  const questions = getActiveQuestions();
-  if (!questions.length) return null;
-  return questions[state.currentIndex % questions.length];
-}
-
+function loadWrongIds() { try { return new Set(JSON.parse(localStorage.getItem(wrongKey)) || []); } catch { return new Set(); } }
+function saveWrongIds() { localStorage.setItem(wrongKey, JSON.stringify([...state.wrongIds])); }
+function getActiveQuestions() { if (state.currentMode === "wrong") return state.questions.filter((question) => state.wrongIds.has(question.id)); if (state.currentMode === "all") return state.questions; return state.questions.filter((question) => question.category === state.currentMode); }
+function getCurrentQuestion() { const questions = getActiveQuestions(); if (!questions.length) return null; return questions[state.currentIndex % questions.length]; }
 function renderQuestion() {
   const questions = getActiveQuestions();
   const question = getCurrentQuestion();
   state.answered = false;
-
   elements.answers.innerHTML = "";
   elements.feedback.hidden = true;
   elements.feedback.className = "feedback";
   elements.card.classList.remove("is-flipped");
-
   if (!question) {
     elements.questionTag.textContent = "Keine Fragen";
     elements.questionCount.textContent = "0 Fragen";
-    elements.questionText.textContent = state.currentMode === "wrong"
-      ? "Noch keine Fehler gespeichert."
-      : "In diesem Bereich gibt es noch keine Fragen.";
+    elements.questionText.textContent = state.currentMode === "wrong" ? "Noch keine Fehler gespeichert." : "In diesem Bereich gibt es noch keine Fragen.";
     elements.questionHint.textContent = "Waehle einen anderen Modus oder mache erst ein paar Aufgaben.";
     return;
   }
-
   elements.questionTag.textContent = question.tag || categoryLabel(question.category);
   elements.questionCount.textContent = `Frage ${(state.currentIndex % questions.length) + 1} von ${questions.length}`;
   elements.questionText.textContent = question.question;
   elements.questionHint.textContent = "Waehle die passende Antwort aus. Klick auf die Karte fuer einen Tipp.";
-
   state.currentAnswers = shuffleAnswers(question);
-
   state.currentAnswers.forEach((answerOption, index) => {
     const button = document.createElement("button");
     button.className = "answer";
@@ -841,127 +386,44 @@ function renderQuestion() {
     button.addEventListener("click", () => checkAnswer(index));
     elements.answers.append(button);
   });
-
   renderScores();
 }
-
 function checkAnswer(selectedIndex) {
   if (state.answered) return;
-
   const question = getCurrentQuestion();
   if (!question) return;
-
   state.answered = true;
   const isCorrect = state.currentAnswers[selectedIndex]?.isCorrect === true;
   state.score.total += 1;
-
-  if (isCorrect) {
-    state.score.correct += 1;
-    state.score.streak += 1;
-    state.wrongIds.delete(question.id);
-  } else {
-    state.score.streak = 0;
-    state.wrongIds.add(question.id);
-  }
-
+  if (isCorrect) { state.score.correct += 1; state.score.streak += 1; state.wrongIds.delete(question.id); } else { state.score.streak = 0; state.wrongIds.add(question.id); }
   saveWrongIds();
-
   [...elements.answers.children].forEach((button, index) => {
     button.disabled = true;
     if (state.currentAnswers[index]?.isCorrect) button.classList.add("is-correct");
     if (index === selectedIndex && !isCorrect) button.classList.add("is-wrong");
   });
-
   elements.feedback.hidden = false;
   elements.feedback.classList.add(isCorrect ? "good" : "bad");
   elements.feedback.innerHTML = `<strong>${isCorrect ? "Richtig." : "Noch nicht."}</strong> ${question.explanation}`;
   renderScores();
 }
-
 function shuffleAnswers(question) {
-  const answers = question.answers.map((text, index) => ({
-    text,
-    isCorrect: index === question.correct
-  }));
-
-  for (let i = answers.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [answers[i], answers[j]] = [answers[j], answers[i]];
-  }
-
+  const answers = question.answers.map((text, index) => ({ text, isCorrect: index === question.correct }));
+  for (let i = answers.length - 1; i > 0; i -= 1) { const j = Math.floor(Math.random() * (i + 1)); [answers[i], answers[j]] = [answers[j], answers[i]]; }
   return answers;
 }
-
-function renderScores() {
-  elements.scoreCorrect.textContent = state.score.correct;
-  elements.scoreTotal.textContent = state.score.total;
-  elements.scoreStreak.textContent = state.score.streak;
-}
-
-function nextQuestion() {
-  const questions = getActiveQuestions();
-  if (!questions.length) {
-    renderQuestion();
-    return;
-  }
-
-  state.currentIndex = (state.currentIndex + 1) % questions.length;
-  renderQuestion();
-}
-
-function shuffleQuestions() {
-  const shuffled = [...state.questions];
-  for (let i = shuffled.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  state.questions = shuffled;
-  state.currentIndex = 0;
-  renderQuestion();
-}
-
-function resetProgress() {
-  state.score = { correct: 0, total: 0, streak: 0 };
-  state.wrongIds.clear();
-  saveWrongIds();
-  renderScores();
-  renderQuestion();
-}
-
-function setMode(mode) {
-  state.currentMode = mode;
-  state.currentIndex = 0;
-  elements.modeButtons.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.mode === mode);
-  });
-  renderQuestion();
-}
-
-function categoryLabel(category) {
-  if (category === "erfolg") return "Erfolgskonten";
-  if (category === "zuordnung") return "Zuordnungen";
-  return "Bestandskonten";
-}
-
+function renderScores() { elements.scoreCorrect.textContent = state.score.correct; elements.scoreTotal.textContent = state.score.total; elements.scoreStreak.textContent = state.score.streak; }
+function nextQuestion() { const questions = getActiveQuestions(); if (!questions.length) { renderQuestion(); return; } state.currentIndex = (state.currentIndex + 1) % questions.length; renderQuestion(); }
+function shuffleQuestions() { const shuffled = [...state.questions]; for (let i = shuffled.length - 1; i > 0; i -= 1) { const j = Math.floor(Math.random() * (i + 1)); [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; } state.questions = shuffled; state.currentIndex = 0; renderQuestion(); }
+function resetProgress() { state.score = { correct: 0, total: 0, streak: 0 }; state.wrongIds.clear(); saveWrongIds(); renderScores(); renderQuestion(); }
+function setMode(mode) { state.currentMode = mode; state.currentIndex = 0; elements.modeButtons.forEach((button) => { button.classList.toggle("is-active", button.dataset.mode === mode); }); renderQuestion(); }
+function categoryLabel(category) { if (category === "erfolg") return "Erfolgskonten"; if (category === "zuordnung") return "Zuordnungen"; return "Bestandskonten"; }
 elements.nextButton.addEventListener("click", nextQuestion);
 elements.shuffleButton.addEventListener("click", shuffleQuestions);
 elements.resetButton.addEventListener("click", resetProgress);
-elements.card.addEventListener("click", () => {
-  const question = getCurrentQuestion();
-  if (!question) return;
-  elements.card.classList.toggle("is-flipped");
-  elements.questionHint.textContent = elements.card.classList.contains("is-flipped")
-    ? "Tipp: Bestandskonten werden ueber das Schlussbilanzkonto abgeschlossen. Erfolgskonten ueber GuV."
-    : "Waehle die passende Antwort aus. Klick auf die Karte fuer einen Tipp.";
-});
-elements.modeButtons.forEach((button) => {
-  button.addEventListener("click", () => setMode(button.dataset.mode));
-});
-
+elements.card.addEventListener("click", () => { const question = getCurrentQuestion(); if (!question) return; elements.card.classList.toggle("is-flipped"); elements.questionHint.textContent = elements.card.classList.contains("is-flipped") ? "Tipp: Bestandskonten werden ueber das Schlussbilanzkonto abgeschlossen. Erfolgskonten ueber GuV." : "Waehle die passende Antwort aus. Klick auf die Karte fuer einen Tipp."; });
+elements.modeButtons.forEach((button) => { button.addEventListener("click", () => setMode(button.dataset.mode)); });
 renderQuestion();
-
     </script>
   </body>
 </html>
-
-
